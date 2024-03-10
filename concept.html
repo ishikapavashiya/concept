@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         class object{
+        //             constructor(Physics,Chemistry, Biology,Mathematics,){
+        //                 this.Physics=Physics;
+        //                 this.Chemistry=Chemistry;
+        //                 this.Biology=Biology;
+        //                 this.Mathematics=Mathematics;
+        //             }
+        //             Calculatepercentage(){
+        //                 console.log(`grade is result:${this.Physics},chemistry ${this.Chemistry},Biology ${this.Biology},mathematics ${this.Mathematics}`);
+        //             }
+        //         }
+        //    let physics=parseInt(prompt("physics marks"));
+        //    let chemistry=parseInt(prompt("hemistry marks"));
+        //    let biology=parseInt(prompt(" biology marks"));
+        //    let mathematics=parseInt(prompt(" mathematics marks"));
+
+        //    let total=physics+chemistry+biology+mathematics;
+        //    console.log("total marks",total);
+        //    let per=total/5;
+        //    console.log("percentage",per,"%");
+
+        //    if(per>=90 && per<=100){
+        //       console.log("Grade :A");
+        //    }
+        //     else if(per<90 && per>=80){
+        //       console.log("Grade :B");
+        //     }
+        //     else if(per<80 && per>=70){
+        //       console.log("Grade : c");
+        //     }
+        //     else if(per<70 && per>=60){
+        //       console.log("Grade :D");
+        //     }
+        //     else if(per<60 && per>=50){
+        //       console.log("Grade :E");
+        //     }
+        //     else if(per<50 && per>=40){
+        //       console.log("Grade :E");
+        //     }
+        //      else
+        // {
+        //     console.log("fail");
+        // }
+        //   ======================================== 2 program===========================
+        // class name {
+        //     constructor(name, email, phone) {
+        //         this.name = name;
+        //         this.email = email;
+        //         this.phone = phone;
+        //     }
+        //     printdata() {
+        //         console.log(`your data Detail name: ${this.name},email: ${this.email},phone: ${this.phone}`);
+        //     }
+        // }
+        // let s1 = new name("ishika", "ishika@gmail.com", "12345");
+        // s1.printdata();
+        // let s2 = new name("dipa", "dipa@gmail.com", "12345");
+        // s2.printdata();
+        // ==========================================================
+        // class Table {
+        //     constructor(number) {
+        //         this.number = number;
+        //     }
+        //     printTable() {
+        //         let multi = 1;
+        //         console.log(`Multiplication Table of ${this.number}:`);
+        //         do {
+        //             let result = this.number * multi;
+        //             console.log(`${this.number} x ${multi} = ${result}`);
+        //             multi++;
+        //         } while (multi <= 10);
+        //     }
+        // }
+        // const number = parseInt(prompt("Enter a number to print its multiplication table:"));
+
+        // if ((number)) {
+        //     const table = new Table(number);
+        //     table.printTable();
+        // } else {
+        //     console.log("Invalid input. Please enter a valid number.");
+        // }
+
+        // =================================4 program============================
+        // class Employee {
+        //     constructor(name, salary, hireDate) {
+        //         this.name = name;
+        //         this.salary = salary;
+        //         this.hireDate = hireDate;
+        //     }
+
+        //     calculateYearsOfService() {
+        //         const hireYear = new Date(this.hireDate).getFullYear();
+        //         const currentYear = new Date().getFullYear();
+        //         return currentYear - hireYear;
+        //     }
+        // }
+        // const employee1 = new Employee("John Doe", 50000, "2018-05-15");
+        // console.log(employee1.name);
+        // console.log(employee1.salary); 
+        // console.log(employee1.hireDate);
+        // console.log(employee1.calculateYearsOfService()); 
+
+
+        // ===========================================5 program==============
+        // class libr{
+        //     constructor(test){
+        //         this.test=["THE BLUE UMBRELLA","The Gita","The Namesake","Discovery of India"]
+        //     }
+        //     add(test){
+        //         this.test.push("The Gita","The Namesake");
+        //         console.log(this.test);
+        //     } 
+        //     removeclass(test){
+        //         let int =prompt("Enter your value");
+        //          for(let i = 0; i < this.test .length; i++){
+        //             if(this.test[i] !== int){
+        //                 console.log(this.test[i]);
+        //             }
+        //          }
+        //     }
+        // }
+        // b1 = new libr()
+        // b1.add()
+        // b1.removeclass()
+
+        // =================================program 6=============================
+        // class Restaurant {
+        //     constructor() {
+        //         this.menuItems = {};
+        //         this.prices = {};
+        //         this.ratings = [];
+        //     }
+        //     addItem(item, price) {
+        //         this.menuItems[item] = price;
+        //     }
+
+        //     removeItem(item) {
+        //         if (this.menuItems.hasOwnProperty(item)) {
+        //             delete this.menuItems[item];
+        //             console.log(`${this.item} has been removed from the menu.`);
+        //         } else {
+        //             console.log(`${this.item} is not in the menu.`);
+        //         }
+        //     }
+
+        //     addRating(rating) {
+        //         this.ratings.push(rating);
+        //     }
+
+        //     calculateAverageRating() {
+        //         if (this.ratings.length === 0) {
+        //             return "No ratings yet.";
+        //         } else {
+        //             const totalRating = this.ratings.reduce((acc, cur) => acc + cur, 0);
+        //             return this.ratings.length;
+        //         }
+        //     }
+        // }
+        // const myRestaurant = new Restaurant();
+        // myRestaurant.addItem("Burger", 10);
+        // myRestaurant.addItem("Pizza", 12);
+        // myRestaurant.addItem("Salad", 8);
+
+        // myRestaurant.addRating(4);
+        // myRestaurant.addRating(5);
+        // myRestaurant.addRating(3);
+
+        // myRestaurant.removeItem("Salad");
+
+
+        // console.log("Average Rating:", myRestaurant.calculateAverageRating());
+
+
+
+    </script>
+</body>
+
+</html>
